@@ -20,3 +20,4 @@
 ---
 Полезные ссылки:
 1. [Переменные в Python [en]](https://docs.python.org/3/tutorial/introduction.html)
+2. [Встроенные типы [en]](https://docs.python.org/3/library/stdtypes.html)
