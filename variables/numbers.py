@@ -56,7 +56,7 @@ print('Возведение в степень: 9 ** 3.2 = ' + str(num_power2) + 
 print()
 
 # Операторы сравления: <, <=, ==, >, >=, !=
-# Операторы сравнения возвращают тип перенных boolean
+# Операторы сравнения возвращают тип переменных boolean
 print('3) Операторы сравления')
 print('Сравнение: ' + str(num_integer) + ' < ' + str(num_float) + ' Результат: ' + str(num_integer < num_float)
     + ' Тип переменной: ' + str(type(num_integer < num_float))
@@ -109,50 +109,94 @@ print('Логическая операция: not ' + str(0)
 )
 print()
 
-# Операторы присваевания: +=, -=, *=, /=, //=, %=, **=
-print('5) Операторы присваевания')
-print('num_integer = '+ str(num_integer))
-print('Запись num_integer += 2 эквивалентна num_integer = num_integer + 2')
-num_integer += 2
-print('num_integer = '+ str(num_integer) + ' Тип переменной: ' + str(type(num_integer)))
-
-print('Запись num_float -= 1.05 эквивалентна num_float = num_float - 1.05')
-num_float -= 1.05
-print('num_float = '+ str(num_float) + ' Тип переменной: ' + str(type(num_float)))
-
-print('num_subtraction = '+ str(num_subtraction))
-print('Запись num_subtraction *= 0.5 эквивалентна num_subtraction = num_subtraction * 0.5')
-num_subtraction *= 0.5
-print('num_subtraction = '+ str(num_subtraction) + ' Тип переменной: ' + str(type(num_subtraction)))
-
-print('num_summation = '+ str(num_summation))
-print('Запись num_summation /= 2 эквивалентна num_summation = num_summation / 2')
-num_summation /= 2
-print('num_summation = '+ str(num_summation) + ' Тип переменной: ' + str(type(num_summation)))
-
-print('num_division2 = '+ str(num_division2))
-print('Запись num_division2 //= 3 эквивалентна num_division2 = num_division2 // 3')
-num_division2 //= 3
-print('num_division2 = '+ str(num_division2) + ' Тип переменной: ' + str(type(num_division2)))
-
-print('float_from_str = '+ str(float_from_str))
-print('Запись float_from_str %= 5 эквивалентна float_from_str = float_from_str % 5')
-float_from_str %= 5
-print('float_from_str = '+ str(float_from_str) + ' Тип переменной: ' + str(type(float_from_str)))
-
-print('int_from_str = '+ str(int_from_str))
-print('Запись int_from_str **= 4 эквивалентна int_from_str = int_from_str ** 4')
-int_from_str **= 4
-print('int_from_str = '+ str(int_from_str) + ' Тип переменной: ' + str(type(int_from_str)))
-print()
-
 # Побитовые операторы: &, |, ^, ~, <<, >>
-print('6) Побитовые операторы')
+# Сначало значение переменной преобразуется в двоичное число
+# Затем побитовые операторы применяются на этих двоичных представлениях
+# Полученное двоичное число затем преобразуется обратно в целовое представление
+print('5) Побитовые операторы')
+
 num_a = 57
 num_b = 14
-print('Бинарный "И" оператор: num_a & num_b = ' + str(num_a & num_b))
-print('Бинарный "ИЛИ" оператор: num_a | num_b = ' + str(num_a | num_b))
-print('Бинарный "Исключительное ИЛИ" оператор: num_a ^ num_b = ' + str(num_a ^ num_b))
-print('Бинарный комплиментарный оператор: num_a ~ num_b = ' + str(~num_a))
-print('Побитовый сдвиг влево: num_a << 2 = ' + str(num_a << 2))
-print('Побитовый сдвиг вправо: num_b >> 2 = ' + str(num_b >> 2))
+
+print('Бинарный "И" оператор: num_a & num_b = ' + str(num_a & num_b) + ' Тип переменной: ' + str(type(num_a & num_b)))
+print('Бинарный "ИЛИ" оператор: num_a | num_b = ' + str(num_a | num_b) + ' Тип переменной: ' + str(type(num_a | num_b)))
+print('Бинарный "Исключительное ИЛИ" оператор: num_a ^ num_b = ' + str(num_a ^ num_b) + ' Тип переменной: ' + str(type(num_a ^ num_b)))
+print('Бинарный комплиментарный оператор: num_a ~ num_b = ' + str(~num_a) + ' Тип переменной: ' + str(type(~num_a)))
+print('Побитовый сдвиг влево: num_a << 2 = ' + str(num_a << 2) + ' Тип переменной: ' + str(type(num_a << 2)))
+print('Побитовый сдвиг вправо: num_b >> 2 = ' + str(num_b >> 2) + ' Тип переменной: ' + str(type(num_b >> 2)))
+print()
+
+# Операторы присваевания: +=, -=, *=, /=, //=, %=, **=
+print('6) Операторы присваевания')
+
+print('num_integer = ' + str(num_integer))
+num_integer += 2
+print('Результат num_integer += 2: ' + str(num_integer) + ' Тип переменной: ' + str(type(num_integer)))
+
+print('num_float = ' + str(num_float))
+num_float -= 1.05
+print('Результат num_float -= 1.05: ' + str(num_float) + ' Тип переменной: ' + str(type(num_float)))
+
+print('num_subtraction = ' + str(num_subtraction))
+num_subtraction *= 0.5
+print('Результат num_subtraction *= 0.5: ' + str(num_subtraction) + ' Тип переменной: ' + str(type(num_subtraction)))
+
+print('num_summation = ' + str(num_summation))
+num_summation /= 2
+print('Результат num_summation /= 2: ' + str(num_summation) + ' Тип переменной: ' + str(type(num_summation)))
+
+print('num_division2 = ' + str(num_division2))
+num_division2 //= 3
+print('Результат num_division2 //= 3: ' + str(num_division2) + ' Тип переменной: ' + str(type(num_division2)))
+
+print('float_from_str = ' + str(float_from_str))
+float_from_str %= 5
+print('Результат float_from_str %= 5: ' + str(float_from_str) + ' Тип переменной: ' + str(type(float_from_str)))
+
+print('int_from_str = ' + str(int_from_str))
+int_from_str **= 4
+print('Результат int_from_str **= 4: ' + str(int_from_str) + ' Тип переменной: ' + str(type(int_from_str)))
+
+print('num_a = ' + str(num_a))
+num_a &= 76
+print('Результат num_a &= 76: ' + str(num_a) + ' Тип переменной: ' + str(type(num_a)))
+
+print('num_b = ' + str(num_b))
+num_b &= 7
+print('Результат num_b &= 7: ' + str(num_b) + ' Тип переменной: ' + str(type(num_b)))
+
+print('num_b = ' + str(num_b))
+num_b ^= 3
+print('Результат num_b ^= 3: ' + str(num_b) + ' Тип переменной: ' + str(type(num_b)))
+
+print('num_a = ' + str(num_a))
+num_a >>= 2
+print('Результат num_a >>= 2: ' + str(num_a) + ' Тип переменной: ' + str(type(num_a)))
+
+print('num_b = ' + str(num_b))
+num_b <<= 2
+print('Результат num_b <<= 2: ' + str(num_b) + ' Тип переменной: ' + str(type(num_b)))
+print()
+
+# Операторы тождественности: is, is not
+# Оператор is возвращает true, если обе переменные ссылаются на один объект, иначе возвращает false
+# Оператор is not возвращает true, если обе переменные ссылаются на разные объекты, иначе возвращает false
+# Операторы сравнения возвращают тип переменных boolean
+print('7) Операторы тождественности')
+
+num_f = 6
+num_g = 6
+
+print('num_f = ' + str(num_f) + ', ' + 'num_g = ' + str(num_g))
+print('num_f is num_g = ' + str(num_f is num_g ) + ' Тип переменной: ' + str(type(num_f is num_g)))
+
+num_d = num_c = 3
+
+print('num_c = ' + str(num_c) + ', ' + 'num_d = ' + str(num_d))
+print('num_c is num_d = ' + str(num_c is num_d) + ' Тип переменной: ' + str(type(num_c is num_d)))
+print('num_a is not num_c = ' + str(num_a is not num_c) + ' Тип переменной: ' + str(type(num_a is num_c)))
+
+num_c = 4
+
+print('num_c = ' + str(num_c))
+print('num_c is num_d = ' + str(num_c is num_d) + ' Тип переменной: ' + str(type(num_c is num_d)))
