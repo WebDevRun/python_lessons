@@ -1,4 +1,5 @@
-# Получение длины строки
+"""Получение длины строки."""
+
 print('Получение длины строки')
 
 s = 'supercalifragilisticexpialidocious'
