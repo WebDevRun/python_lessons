@@ -1,5 +1,6 @@
 """Присвоение списков.
 
+Списки - это ссылочный тип данных.
 У каждого элемента списка есть свой индекс. Индекс первого элемента = 0
 """
 
@@ -18,3 +19,18 @@ list_from_generator_2 = [num ** 2 for num in range(10)]
 
 print(f'list_from_generator = {list_from_generator}. Тип переменной: {str(type(list_from_generator))}')
 print(f'list_from_generator_2 = {list_from_generator_2}. Тип переменной: {str(type(list_from_generator_2))}')
+
+print('3) Создание копии списка')
+
+list_var_copy = list_var
+list_var_copy2 = list_var[:]
+list_var_copy3 = list(list_var)
+
+print(f'list_var_copy = {list_var_copy}. Тип переменной: {str(type(list_var_copy))}')
+print(f'list_var_copy == list_var: {list_var_copy == list_var}')
+
+print(f'list_var_copy2 = {list_var_copy2}. Тип переменной: {str(type(list_var_copy2))}')
+print(f'list_var_copy2 == list_var: {list_var_copy2 == list_var}')
+
+print(f'list_var_copy3 = {list_var_copy3}. Тип переменной: {str(type(list_var_copy3))}')
+print(f'list_var_copy3 == list_var: {list_var_copy3 == list_var}')
