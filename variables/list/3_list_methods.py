@@ -37,9 +37,21 @@ print(f'Результат метода index("i"): {list_var.index("i")}')
 # Метод count(x) возвращяет количество элементов со значением х
 print(f'Результат метода count("t"): {list_var.count("t")}')
 
-# Метод sort() сортирует список
+# Метод sort(reverse, key) сортирует список
 list_var.sort()
 print(f'Результат метода sort(): {list_var}')
+
+list_var.sort(reverse = True)
+print(f'Результат метода sort(reverse = True): {list_var}')
+
+def sort_len(s):
+    return len(s)
+
+sort_list = ['a', 'bbbb', 'ccc', 'dd']
+print(f'Исходный список: {sort_list}')
+
+sort_list.sort(key = sort_len)
+print(f'Результат метода sort(key = sort_len): {sort_list}')
 
 # Метод reverse() разворачивает список
 list_var.reverse()
