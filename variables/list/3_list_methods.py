@@ -9,7 +9,8 @@ print(str(list_var))
 list_var.append('of')
 print(f'Результат метода append("of"): {list_var}')
 
-# Метод extend(list) расширяет список, добавляя в конец все элементы другого списка
+# Метод extend(list) расширяет список,
+# добавляя в конец все элементы другого списка
 list_var.extend(list('string'))
 print(f'Результат метода extend(list("string")): {list_var}')
 
@@ -41,16 +42,19 @@ print(f'Результат метода count("t"): {list_var.count("t")}')
 list_var.sort()
 print(f'Результат метода sort(): {list_var}')
 
-list_var.sort(reverse = True)
+list_var.sort(reverse=True)
 print(f'Результат метода sort(reverse = True): {list_var}')
 
+
 def sort_len(s):
+    """Sort list by length."""
     return len(s)
+
 
 sort_list = ['a', 'bbbb', 'ccc', 'dd']
 print(f'Исходный список: {sort_list}')
 
-sort_list.sort(key = sort_len)
+sort_list.sort(key=sort_len)
 print(f'Результат метода sort(key = sort_len): {sort_list}')
 
 # Метод reverse() разворачивает список
