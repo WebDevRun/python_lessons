@@ -20,7 +20,7 @@ print('1) Конъюнкция\n'
       + '+-------+-------+----------+\n'
       + '| False | False |   False  |\n'
       + '+-------+-------+----------+\n'
-)
+      )
 
 # Пример конъюнкции
 print('number_a < number_b and number_a > number_c =',
@@ -44,7 +44,7 @@ print('2) Дизъюнкция\n'
       + '+-------+-------+----------+\n'
       + '| False | False |   False  |\n'
       + '+-------+-------+----------+\n'
-)
+      )
 
 # Пример дизъюнкции
 print('number_a < number_b or number_a > number_c =',
@@ -64,7 +64,7 @@ print('3) Инверсия\n'
       + '+-------+-------+\n'
       + '| False | True  |\n'
       + '+-------+-------+\n'
-)
+      )
 
 # Пример инверсии
 print(f'not number_a = {not number_a}')
