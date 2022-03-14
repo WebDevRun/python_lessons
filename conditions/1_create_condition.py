@@ -12,7 +12,7 @@ else:
 x = 5
 y = 166
 
-# общий вид
+# Общий вид
 if x == y:
     print(f'{str(x)} = {str(y)}')
 elif x > y:
@@ -20,9 +20,12 @@ elif x > y:
 else:
     print(f'{str(x)} < {str(y)}')
 
-# Короткий вид if
-if x < y: print(f'{str(x)} < {str(y)}')
+# Вид if else
+if x > y:
+    print(f'{str(x)} > {str(y)}')
+else:
+    print(f'{str(x)} < {str(y)}')
 
-# Коротний вид if else
-if x > y: print (f'{str(x)} > {str(y)}')
-else: print (f'{str(x)} < {str(y)}')
+# Вид if
+if x < y:
+    print(f'{str(x)} < {str(y)}')

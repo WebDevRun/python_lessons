@@ -1,4 +1,5 @@
-import webbrowser  # импорт модуля webbrowser
+"""Импорт модуля webbrowser."""
+import webbrowser
 
 website = input('Введите адрес сайта -> ')
 
@@ -13,5 +14,3 @@ else:
     website = 'https://www.' + website
     webbrowser.open(website)
     print('else')
-
-# in - есть ли последовательность в другой последовательности
